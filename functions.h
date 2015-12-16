@@ -1,0 +1,11 @@
+int file_exists(const char *);
+long getfilesize(const char *);
+int parse_commandline(int , char **, char **, char **, char **);
+void advance_record(const char *, struct buffer *);
+void load_file(char *, struct buffer *);
+void transfer_partials(const char *, struct buffer *);
+void write_chunks(char *, char *, struct buffer *);
+void do_fp(FILE *f);
+void pt(unsigned char *md);
+int check(char *);
+void strip(char *);
